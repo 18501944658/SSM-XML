@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--DTD约束引入-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <!--<mappers>-->
+        <!--&lt;!&ndash;必须保证接口名和xml名一样而且在同一个包下&ndash;&gt;-->
+        <!--&lt;!&ndash;<package name="com.itszt.dao"></package>&ndash;&gt;-->
+        <!--&lt;!&ndash;必须保证接口名和xml名一样而且在同一个包下&ndash;&gt;-->
+        <!--&lt;!&ndash;<mapper class="com.itszt.dao.UserDao"></mapper>&ndash;&gt;-->
+        <!--&lt;!&ndash;<mapper resource="com/itszt/mapper/UserDao.xml"></mapper>&ndash;&gt;-->
+    <!--</mappers>-->
+</configuration>
