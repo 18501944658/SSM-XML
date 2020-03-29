@@ -14,13 +14,21 @@
     <context:component-scan base-package="com.itszt.controller"></context:component-scan>
 
 
-   <bean id="jsonconverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+   <!--<bean id="customObjectMapper" class="com.fasterxml.jackson.databind.ObjectMapper">-->
+       <!--<property name="dateFormat" value="yyyy-MM-dd HH:mm:ss"></property>-->
+       <!--&lt;!&ndash;<property name="timeZone" value="GMT+8"></property>&ndash;&gt;-->
+   <!--</bean>-->
 
-   </bean>
+
+    <!--<bean id="jsonconverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">-->
+        <!--<property name="objectMapper" ref="customObjectMapper"></property>-->
+    <!--</bean>-->
+
 
     <mvc:annotation-driven>
         <mvc:message-converters>
-            <ref bean="jsonconverter"></ref>
+            <!--<ref bean="jsonconverter"></ref>-->
+            <ref bean="getMappingJackson2HttpMessageConverter"></ref>
         </mvc:message-converters>
     </mvc:annotation-driven>
 

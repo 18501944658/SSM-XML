@@ -1,9 +1,12 @@
 package com.itszt.domain;
 
+import java.util.Date;
+
 public class User {
     private int id;
     private String name;
     private int age;
+    private Date time;
 
 
     public int getId() {
@@ -30,12 +33,21 @@ public class User {
         this.age = age;
     }
 
+    public Date getTime() {
+        return time;
+    }
+
+    public void setTime(Date time) {
+        this.time = time;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
+                ", time=" + time +
                 '}';
     }
 }
